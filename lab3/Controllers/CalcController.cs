@@ -39,15 +39,7 @@ namespace lab3.Controllers
         [HttpGet]
         public IActionResult Calculate()
         {
-            var results = new
-            {
-                AddResult = _calcService.Add(6, 2),
-                SubtractResult = _calcService.Subtract(6, 2),
-                MultiplyResult = _calcService.Multiply(6, 2),
-                DivideResult = _calcService.Divide(6, 2) 
-            };
-
-            return View(results); 
+            return View(); 
         }
     }
 }
